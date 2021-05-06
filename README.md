@@ -60,7 +60,7 @@ Extra UI Features:
 To start the demo instance, run the following command:
 
 ```shell
-docker run --rm --name ci-jenkins-io-dev -v maven-repo:/root/.m2 -e DEV_HOST=${CURRENT_HOST} -p 8080:8080 -p 50000:50000 onenashev/demo-jenkins-config-as-code
+docker run --rm --name ci-jenkins-uberleet-org -v maven-repo:/root/.m2 -e DEV_HOST=${CURRENT_HOST} -p 8080:8080 -p 50000:50000 onenashev/demo-jenkins-config-as-code
 ```
 
 The `DEV_HOST` environment variable is used to connect agents without using Docker-in-Docker.
@@ -78,7 +78,7 @@ In the _Development_ folder there is a _PipelineLib_ folder, which allows local 
 This folder can be mapped to a local repository in order to develop the library without committing changes: 
 
 ```shell
-docker run --rm --name ci-jenkins-io-dev -v maven-repo:/root/.m2 -v ${MY_PIPELINE_LIBRARY_DIR}:/var/jenkins_home/pipeline-library -v ${MY_OTHER_PIPELINE_LIBS_DIRS}:/var/jenkins_home/pipeline-libs -e DEV_HOST=${CURRENT_HOST} -p 8080:8080 -p 50000:50000  onenashev/demo-jenkins-config-as-code
+docker run --rm --name ci-jenkins-uberleet-org -v maven-repo:/root/.m2 -v ${MY_PIPELINE_LIBRARY_DIR}:/var/jenkins_home/pipeline-library -v ${MY_OTHER_PIPELINE_LIBS_DIRS}:/var/jenkins_home/pipeline-libs -e DEV_HOST=${CURRENT_HOST} -p 8080:8080 -p 50000:50000  onenashev/demo-jenkins-config-as-code
 ```
 
 Once started, you can just start editing the Pipeline library locally.
@@ -111,7 +111,3 @@ Build image:
 ```shell
 docker build -t onenashev/demo-jenkins-config-as-code .
 ```
-
-### Release notes
-
-See [GitHub releases](https://github.com/oleg-nenashev/demo-jenkins-config-as-code/releases).

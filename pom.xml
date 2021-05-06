@@ -12,6 +12,11 @@
 
   <developers>
     <developer>
+      <name>Jonathan Kelley</name>
+      <organization>Jenkins project</organization>
+      <organizationUrl>https://jenkins.io</organizationUrl>
+    </developer>
+    <developer>
       <name>Oleg Nenashev</name>
       <organization>Jenkins project</organization>
       <organizationUrl>https://jenkins.io</organizationUrl>

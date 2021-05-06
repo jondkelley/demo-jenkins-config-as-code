@@ -1,7 +1,7 @@
-ARG JENKINS_VERSION=2.240
+ARG JENKINS_VERSION=2.291
 FROM jenkins/jenkins:$JENKINS_VERSION
-LABEL Maintainer="Oleg Nenashev <o.v.nenashev@gmail.com>"
-LABEL Description="This demo shows how to setup Jenkins Config-as-Code with Docker, Pipeline, and Groovy Hook Scripts" Vendor="Oleg Nenashev" Version="0.2"
+LABEL Maintainer="Jonathan Kelley <jonk@omg.lol>"
+LABEL Description="This demo shows how to setup Jenkins Config-as-Code with Docker, Pipeline, and Groovy Hook Scripts" Vendor="Jonathan Kelley" Version="0.2"
 
 # Plugin Installation Manager
 ARG PLUGIN_MANAGER_TOOL_VERSION=1.0.2
